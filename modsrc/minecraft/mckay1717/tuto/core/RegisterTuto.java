@@ -7,16 +7,18 @@ import net.minecraft.item.Item;
 
 public class RegisterTuto {
 	
-	public void registerBlock(Block block , String name)
+	public static void registerBlock(Block block , String name)
 	{
 		GameRegistry.registerBlock(block, name);
 		LanguageRegistry.addName(block, name);
 	}
 	
-	public void registerItem(Item item , String name)
+	public static void registerItem(Item item , String name)
 	{
 		GameRegistry.registerItem(item, name);
 		LanguageRegistry.addName(item, name);
 	}
+
+
 
 }
